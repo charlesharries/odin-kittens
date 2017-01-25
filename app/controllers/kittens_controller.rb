@@ -37,7 +37,7 @@ class KittensController < ApplicationController
   end
 
   def destroy
-    @kitten = Kitten.find(params[:id]).destroy
+    Kitten.find(params[:id]).destroy
     flash[:success] = "Kitten was destroyed, which is fine because it's an abstract fucking concept for the purposes of this exercise, fuck"
     redirect_to root_url
   end
