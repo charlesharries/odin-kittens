@@ -1,5 +1,5 @@
 <li>
-  <b><%= kitten.name %></b>, <%= kitten.age %> |
+  <b><%= link_to kitten.name, kitten %></b>, <%= kitten.age %> |
   Cuteness: <%= kitten.cuteness %>/10 |
   Softness: <%= kitten.softness %>/10 |
   <%= link_to "REMOVE THIS KITTEN", kitten, method: :delete %>
