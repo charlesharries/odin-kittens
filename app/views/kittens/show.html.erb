@@ -1,0 +1,9 @@
+<h1><%= @kitten.name %>'s fucking page</h1>
+
+<h3><%= pluralize(@kitten.age, "year") %> old</h3>
+<h3><%= @kitten.cuteness %> / 10 on cuteness</h3>
+<h3><%= @kitten.softness %> / 10 on softness</h3>
+
+<%= link_to "Check out all the kittens", kittens_path %> |
+<%= link_to "Change this kitten", edit_kitten_path(@kitten) %> |
+<%= link_to "REMOVE THIS KITTEN", @kitten, method: :delete %>
